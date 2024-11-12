@@ -7,12 +7,10 @@ module.exports = {
         autorestart: true,
         watch: true,
         max_memory_restart: "1G",
-        out_file: "./out.log",
-        error_file: "./error.log",
         merge_logs: true,
         log_date_format: "DD-MM HH:mm:ss Z",
         log_type: "json",
-        ignore_watch : ["node_modules", "client/img"],
+        ignore_watch : ["node_modules", "error.log", "out.log"],
         env: {
           NODE_ENV: "production"
          },
